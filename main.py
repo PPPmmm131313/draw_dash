@@ -3,12 +3,8 @@ from dash.dependencies import Input, Output, State, MATCH, ALL
 import plotly.graph_objects as go
 import dash_core_components as dcc
 import dash_html_components as html
-import dash_table
-import io
 import pandas as pd
 
-def test():
-    print(1)
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(external_stylesheets=external_stylesheets)
@@ -123,7 +119,6 @@ def name_to_drop_down(filename, exist_opt):
 def update_output(filename):
     return_list = []
     # TODO: добавить сравнение с прошлым списком, чтоб не отрисовывать старые
-    # TODO добавить название графиков
     for i_drop_name in filename:
         if i_drop_name:
             fig = go.Figure()
