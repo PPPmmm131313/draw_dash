@@ -6,7 +6,7 @@
 
 ## Libs
 
-[pip installed] (https://pip.pypa.io/en/stable/installation/)
+[pip installed](https://pip.pypa.io/en/stable/installation/)
 
 ```bash
 pip install numpy 
@@ -19,5 +19,5 @@ pip install plotly
 
 ## Example
 
-![vid](./docs/video.gif)
+![vid](./doc/video.gif)
 
