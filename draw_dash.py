@@ -16,9 +16,6 @@ def draw_dash(param_dict: list, test_func: Callable) -> object:
 
     example:
     --------
-    >>> import draw_dash as d_dash
-    >>> import pandas as pd
-    >>> import plotly.graph_objects as go
     >>> dropdown_values = ['test1', 'test2']
     >>> param_dict = [{'label': i, 'value': i} for i in dropdown_values]
     >>> df = pd.DataFrame([[1, 'test1', 10], [2, 'test1', 11], [1, 'test2', 3], [2, 'test2', 5]], columns=['data', 'param_id', 'tm_value'])
@@ -27,7 +24,7 @@ def draw_dash(param_dict: list, test_func: Callable) -> object:
     >>>         figure.add_trace(go.Scatter(x=df[df.param_id == i_name].data, y=df[df.param_id == i_name].tm_value, name=i_name))
     >>>     figure.update_layout(legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1))
     >>>     return figure
-    >>> d_dash.draw_dash(param_dict, example_func)
+    >>> draw_dash(param_dict, example_func)
     """
 
     # style
