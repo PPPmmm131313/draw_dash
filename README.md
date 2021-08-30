@@ -19,5 +19,15 @@ pip install plotly
 
 ## Example
 
+### second y-axis and synchronize x-axis
+
+#### run second_ax_sync.py
+
+![vid](.doc/video_1.gif)
+
+### just sync axis
+
+#### sync_axis.py
+
 ![vid](./doc/video.gif)
 

@@ -33,7 +33,7 @@ def draw_dash(test_df, param_dict: list, test_func: Callable) -> object:
     >>>
     >>> draw_dash(df, param_dict, example_func)
     """
-    # TODO: переписать нормально с входным dataframe
+    # TODO: переписать нормально с входным dataframe и upload files func
     # style
     external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
     app = dash.Dash(external_stylesheets=external_stylesheets)
@@ -172,7 +172,7 @@ def draw_dash(test_df, param_dict: list, test_func: Callable) -> object:
     def name_to_drop_down(filename, exist_opt):
         if filename is not None:
             for i in range(len(filename)):
-                exist_opt[0].append({"label": filename[i][:-5], "value": filename[i]})
+                exist_opt[0].append({"label": filename[i][:-5], "value": filename[i][:-5]})
                 exist_opt[0] = set_dict(exist_opt[0])
         return [exist_opt[0] for i in range(len(exist_opt))], [
             exist_opt[0] for i in range(len(exist_opt))
